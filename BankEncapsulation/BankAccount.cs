@@ -20,15 +20,21 @@ namespace BankEncapsulation
         //store that value in the balance field
         public void Deposit(double amount)
         {
-            balance = amount;
+             balance += amount;
         }
         //Define a method named GetBalance that will return the amount stored in
         //the balance field
+
+        public void Withdraw(double amount)
+        {
+            balance -= amount;
+        }
 
         public double GetBalance()
         {
             return balance;
         }
+        
 
     }
 }
